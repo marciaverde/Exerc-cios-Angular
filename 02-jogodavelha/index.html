@@ -1,0 +1,44 @@
+<!--
+    1-  Ao clicar em um dos quadrados, adicionar um 'X' ou um 'O', de acordo
+        ao jogador da vez. (Começar com o 'O')
+    2- O jogador não pode trocar o valor de um quadrado já preenchido
+    3- Adicionar um botão para zerar o tabuleiro.
+
+    Desafio: Pintar os 'X' de vermelho e os 'O' de azul
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Velha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-app="velha">
+    <section ng-controller="JogoController">
+        <div class="linha">
+            <div ng-click="selecionar(0)" ng-class="{red: tabuleiro[0].red}">{{tabuleiro[0].posicao}}</div>
+            <div ng-click="selecionar(1)" ng-class="{red: tabuleiro[1].red}">{{tabuleiro[1].posicao}}</div>
+            <div ng-click="selecionar(2)" ng-class="{red: tabuleiro[2].red}">{{tabuleiro[2].posicao}}</div>
+        </div>
+
+        <div class="linha">
+          <div ng-click="selecionar(3)" ng-class="{red: tabuleiro[3].red}">{{tabuleiro[3].posicao}}</div>
+          <div ng-click="selecionar(4)" ng-class="{red: tabuleiro[4].red}">{{tabuleiro[4].posicao}}</div>
+          <div ng-click="selecionar(5)" ng-class="{red: tabuleiro[5].red}">{{tabuleiro[5].posicao}}</div>
+        </div>
+
+        <div class="linha">
+          <div ng-click="selecionar(6)" ng-class="{red: tabuleiro[6].red}">{{tabuleiro[6].posicao}}</div>
+          <div ng-click="selecionar(7)" ng-class="{red: tabuleiro[7].red}">{{tabuleiro[7].posicao}}</div>
+          <div ng-click="selecionar(8)" ng-class="{red: tabuleiro[8].red}">{{tabuleiro[8].posicao}}</div>
+        </div>
+        <button ng-click="limpar()">Limpar Tabuleiro</button>
+
+    </section>
+
+    <script src="../comum/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

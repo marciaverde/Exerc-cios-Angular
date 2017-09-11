@@ -1,0 +1,29 @@
+.linha{
+    display: flex;
+    width: 800px;
+    margin: auto;
+    color: blue;
+}
+
+.linha div{
+    width: 25%;
+    height: 150px;
+    border: 1px solid #555;
+    padding: 8%;
+    font-size: 150px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+button{
+  font-size: 30px;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  margin: 20px;
+
+}
+
+.red{
+  color: red;
+}
